@@ -15,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.classList.add('success');
 
             // Show success message and redirect after 3 seconds
-            message.classList.add('visible');
-            message.textContent = "Giriş yaptınız!";
-            
+            window.location.href = "https://www.slechi.net.tr";
+
             setTimeout(() => {
                 window.location.href = "https://www.your-success-url.com"; // Redirect to a new page
             }, 3000);
