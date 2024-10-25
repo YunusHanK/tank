@@ -30,13 +30,8 @@ body {
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
     text-align: center;
     width: 300px;
-    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.5s, border-radius 0.5s, width 0.5s, height 0.5s;
     color: white;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 h2 {
@@ -94,30 +89,16 @@ button:hover {
     background: #ffffffcc;
 }
 
-/* Success and Error Background */
-body.success {
-    background: linear-gradient(135deg, #28a745, #218838) !important;
+/* Success Animation: Circle and Rotation */
+.login-container.success {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transform: rotate(360deg);
+    transition: transform 3s ease-in-out;
 }
 
-body.error {
-    background: linear-gradient(135deg, #dc3545, #c82333) !important;
-}
-
-/* Success Message */
-#message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px 30px;
-    border-radius: 8px;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-#message.visible {
-    opacity: 1;
+.login-container.success h2,
+.login-container.success form {
+    display: none;
 }
