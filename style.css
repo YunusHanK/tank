@@ -102,3 +102,22 @@ body.success {
 body.error {
     background: linear-gradient(135deg, #dc3545, #c82333) !important;
 }
+
+/* Success Message */
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#message.visible {
+    opacity: 1;
+}
