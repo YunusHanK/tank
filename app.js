@@ -11,14 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = passwordInput.value;
         
         if (username === "yunus" && password === "123") {
-            // Trigger unique transformation and spin effect
+            // Başarılı giriş sonrası animasyonu etkinleştir
             loginContainer.classList.add('success');
             
-            // Disable form interactions after successful login
-            usernameInput.disabled = true;
-            passwordInput.disabled = true;
-
-            // Trigger disappearance after 3 seconds
+            // 3 saniye sonra kaybolma animasyonu
             setTimeout(() => {
                 loginContainer.classList.add('disappear');
                 setTimeout(() => {
