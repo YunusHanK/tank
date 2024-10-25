@@ -126,8 +126,8 @@ button:hover {
 }
 
 /* Light Rings */
-.login-container::before,
-.login-container::after {
+.login-container.success::before,
+.login-container.success::after {
     content: "";
     position: absolute;
     border: 2px solid transparent;
@@ -139,7 +139,7 @@ button:hover {
     animation: lightRing 4s linear infinite;
 }
 
-.login-container::after {
+.login-container.success::after {
     border-color: rgba(255, 255, 255, 0.5);
     width: 150%;
     height: 150%;

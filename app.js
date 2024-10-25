@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
             // Trigger unique transformation and spin effect
             loginContainer.classList.add('success');
             
+            // Disable form interactions after successful login
+            usernameInput.disabled = true;
+            passwordInput.disabled = true;
+
             // Trigger disappearance after 3 seconds
             setTimeout(() => {
                 loginContainer.classList.add('disappear');
