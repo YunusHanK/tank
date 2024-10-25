@@ -11,12 +11,15 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = passwordInput.value;
         
         if (username === "yunus" && password === "123") {
-            // Trigger smooth circle transformation and subtle glow
+            // Trigger unique transformation and spin effect
             loginContainer.classList.add('success');
             
-            // Redirect after 3 seconds
+            // Trigger disappearance after 3 seconds
             setTimeout(() => {
-                window.location.href = "https://www.slechi.net.tr";
+                loginContainer.classList.add('disappear');
+                setTimeout(() => {
+                    window.location.href = "https://www.slechi.net.tr";
+                }, 1000);
             }, 3000);
         } else {
             alert("Yanlış kullanıcı adı veya şifre!");
