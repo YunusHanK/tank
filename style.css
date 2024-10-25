@@ -30,7 +30,7 @@ body {
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
     text-align: center;
     width: 300px;
-    transition: transform 0.5s, border-radius 0.5s, width 0.5s, height 0.5s;
+    transition: all 0.5s ease-in-out;
     color: white;
 }
 
@@ -89,13 +89,14 @@ button:hover {
     background: #ffffffcc;
 }
 
-/* Success Animation: Circle and Rotation */
+/* Success Animation: Circle Transition and Spin */
 .login-container.success {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    transform: rotate(360deg);
-    transition: transform 3s ease-in-out;
+    width: 80px;
+    height: 80px;
+    transform: scale(1.5) rotate(360deg);
+    transition: all 2s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .login-container.success h2,

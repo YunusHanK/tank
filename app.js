@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = passwordInput.value;
         
         if (username === "yunus" && password === "123") {
-            // Trigger circle transformation and rotation
+            // Trigger circle transformation and rotation with scaling
             loginContainer.classList.add('success');
             
             // Redirect after 3 seconds
