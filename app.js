@@ -14,8 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.classList.remove('error');
             document.body.classList.add('success');
 
+            // Show success message and redirect after 3 seconds
+            message.classList.add('visible');
+            message.textContent = "Giriş yaptınız!";
+            
             setTimeout(() => {
-                window.location.href = ""https://www.slechi.net.tr""; // Redirect to a new page
+                window.location.href = "https://www.slechi.net.tr"; // Redirect to a new page
             }, 3000);
         } else {
             document.body.classList.remove('success');
