@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = passwordInput.value;
         
         if (username === "yunus" && password === "123") {
-            // Trigger continuous spin and glow effect
+            // Trigger smooth circle transformation and subtle glow
             loginContainer.classList.add('success');
             
             // Redirect after 3 seconds
