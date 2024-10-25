@@ -89,9 +89,9 @@ button:hover {
     background: #ffffffcc;
 }
 
-/* Success Animation: Circle, Scaling, Rotation, and Glow Effect */
+/* Success Animation: Circle, Continuous Spin, and Glow Effect */
 .login-container.success {
-    animation: toCircle 2.5s ease-in-out forwards, glow 1s ease-in-out infinite alternate;
+    animation: toCircle 2s ease-in-out forwards, rotate 3s linear infinite, glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes toCircle {
@@ -102,17 +102,18 @@ button:hover {
         height: auto;
         background-color: rgba(255, 255, 255, 0.1);
     }
-    50% {
-        transform: scale(1.2);
-        background-color: rgba(255, 255, 255, 0.3);
-    }
     100% {
         border-radius: 50%;
         width: 80px;
         height: 80px;
-        transform: scale(1) rotate(360deg);
         background-color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.2);
     }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @keyframes glow {
