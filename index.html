@@ -3,46 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Animated Website</title>
+    <title>Animated Login Screen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated entry screen -->
-    <div id="entry-screen">
-        <h1>Welcome to My World</h1>
-        <p>Loading...</p>
-    </div>
-
-    <!-- Main content after the entry animation -->
-    <div id="main-content" style="display: none;">
-        <div class="intro">
-            <h1>Explore My Animated Website</h1>
-            <p>Navigate using the sections below!</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#references">References</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>This is the 'About Me' section where you can introduce yourself.</p>
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>This is where you will showcase your work.</p>
-        </section>
-        <section id="references">
-            <h2>References</h2>
-            <p>Include testimonials or references here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Provide contact information or a form here.</p>
-        </section>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-group">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
     </div>
     <script src="app.js"></script>
 </body>

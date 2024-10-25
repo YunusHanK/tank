@@ -1,10 +1,9 @@
+// Optional: Adding a subtle load animation to make the login box appear smoother
 document.addEventListener("DOMContentLoaded", function() {
-    const entryScreen = document.getElementById('entry-screen');
-    const mainContent = document.getElementById('main-content');
-
-    // Simulate loading and transition from entry screen to main content
+    const loginContainer = document.querySelector('.login-container');
+    loginContainer.style.opacity = 0;
     setTimeout(() => {
-        entryScreen.style.display = 'none';
-        mainContent.style.display = 'block';
-    }, 3000);  // 3 seconds delay before showing the main content
+        loginContainer.style.opacity = 1;
+        loginContainer.style.transform = 'scale(1)';
+    }, 300);
 });
