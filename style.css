@@ -14,6 +14,7 @@ body {
     align-items: center;
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     animation: backgroundAnimation 10s infinite alternate ease-in-out;
+    transition: background-color 0.5s;
 }
 
 @keyframes backgroundAnimation {
@@ -91,4 +92,13 @@ button {
 
 button:hover {
     background: #ffffffcc;
+}
+
+/* Success and Error Background */
+body.success {
+    background: linear-gradient(135deg, #28a745, #218838) !important;
+}
+
+body.error {
+    background: linear-gradient(135deg, #dc3545, #c82333) !important;
 }
